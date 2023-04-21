@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Садовое кафе</title>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <a href="index.html" class="logo"> <i class="ri-store-2-line"></i> Садовое кафе </a>
+
+        <nav class="navbar">
+            <a href="#home">главная</a>
+            <a href="#about">о нас</a>
+            <a href="#popular">популярное</a>
+            <a href="#menu">меню</a>
+            <a href="#order">заказ</a>
+            <a href="#blogs">новости</a>
+        </nav>
+
+        <div class="icons">
+            <div id="menu-btn" class="ri-menu-line"></div>
+            <div id="search-btn" class="ri-search-line"></div>
+            <div id="cart-btn" class="ri-shopping-cart-line"></div>
+            <div id="login-btn" class="ri-user-line"></div>
+        </div>
+
+    </header>
+
+
+    <section class="search-form-container">
+
+        <form action="">
+            <input type="search" placeholder="введите ваш запрос" id="search-box">
+            <label for="search-box" class="ri-search-line"></label>
+        </form>
+
+    </section>
+    <section class="shopping-cart-container">
+
+        <div class="products-container">
+
+            <h3 class="title">ваши продукты</h3>
+
+            <div class="box-container">
+
+                <div class="box">
+                    <i class="ri-close-line close-icon"></i>
+                    <img src="image/menu-1.png" alt="">
+                    <div class="content">
+                        <h3>чикен буергер</h3>
+                        <span> количество : </span>
+                        <input type="number" name="" min="1" value="1" id="">
+                        <br>
+                        <span> цена : </span>
+                        <span class="price"> ₽40.00</span>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <i class="ri-close-line close-icon"></i>
+                    <img src="image/menu-2.png" alt="">
+                    <div class="content">
+                        <h3>маргарита</h3>
+                        <span> количество : </span>
+                        <input type="number" name="" min="1" value="1" id="">
+                        <br>
+                        <span> цена : </span>
+                        <span class="price"> ₽32.00</span>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <i class="ri-close-line close-icon"></i>
+                    <img src="image/menu-3.png" alt="">
+                    <div class="content">
+                        <h3>тортилья</h3>
+                        <span> количество : </span>
+                        <input type="number" name="" min="1" value="1" id="">
+                        <br>
+                        <span> цена : </span>
+                        <span class="price"> ₽25.00</span>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <i class="ri-close-line close-icon"></i>
+                    <img src="image/menu-4.png" alt="">
+                    <div class="content">
+                        <h3>Куриный сэндвич</h3>
+                        <span> количество : </span>
+                        <input type="number" name="" min="1" value="1" id="">
+                        <br>
+                        <span> цена : </span>
+                        <span class="price"> ₽19.00</span>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <i class="ri-close-line close-icon"></i>
+                    <img src="image/menu-5.png" alt="">
+                    <div class="content">
+                        <h3>картошка фри</h3>
+                        <span> количество : </span>
+                        <input type="number" name="" min="1" value="1" id="">
+                        <br>
+                        <span> цена : </span>
+                        <span class="price"> ₽38.00</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="cart-total">
+
+            <h3 class="title"> общий заказ </h3>
+
+            <div class="box">
+                <h3 class="subtitle">цена: <span>₽200</span> </h3>
+                <h3 class="total"> общая цена : <span>₽200</span> </h3>
+
+                <a href="#" class="btn">процесс в обработке</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="login-form-container">
+
+        <form action="">
+            <h3>авторизация</h3>
+            <input type="email" placeholder="ваш email" class="box">
+            <input type="password" placeholder="ваш пароль" class="box">
+            <div class="remember">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">запомнить меня</label>
+            </div>
+            <input type="submit" value="войти" class="btn">
+            <p>забыли пароль? <a href="#">нажмите</a> </p>
+            <p>нет аккаунта? <a href="#">создайте!</a> </p>
+        </form>
+
+    </div>
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <span>Добро пожаловать в садовое кафе</span>
+            <h3>Где свежие ароматы расцветают и собираются вместе</h3>
+            <p>Отведайте свежие блюда, приготовленные с фермы, в нашем кафе, оформленном в стиле сада. Приходите за
+                едой, оставайтесь за атмосферой</p>
+            <a href="#popular" class="btn">заказать</a>
+        </div>
+
+        <div class="image">
+            <img src="image/home-img.png" alt="" class="home-img">
+            <img src="image/home-parallax-img.png" alt="" class="home-parallax-img">
+        </div>
+
+    </section>
+
+    <section class="category">
+        <a href="#" class="box">
+            <img src="image/cat-1.png" alt="">
+            <h3>Пицца</h3>
+        </a>
+
+        <a href="#" class="box">
+            <img src="image/cat-2.png" alt="">
+            <h3>бургеры</h3>
+        </a>
+
+        <a href="#" class="box">
+            <img src="image/cat-3.png" alt="">
+            <h3>пироги</h3>
+        </a>
+
+        <a href="#" class="box">
+            <img src="image/cat-4.png" alt="">
+            <h3>курица</h3>
+        </a>
+
+        <a href="#" class="box">
+            <img src="image/cat-5.png" alt="">
+            <h3>кофе</h3>
+        </a>
+
+        <a href="#" class="box">
+            <img src="image/cat-6.png" alt="">
+            <h3>рис</h3>
+        </a>
+    </section>
+
+    <section class="about" id="about">
+
+        <div class="image">
+            <img src="image/about-img.png" alt="">
+        </div>
+
+        <div class="content">
+            <span>почему мы ?</span>
+            <h3 class="title">что делает нашу еду вкусной!</h3>
+            <p>Вкусная еда, уютная атмосфера, вежливое обслуживание и прекрасный вид на сад. Выбирайте нас, чтобы
+                получить незабываемые гастрономические впечатления.</p>
+            <a href="#" class="btn">подробнее</a>
+            <div class="icons-container">
+                <div class="icons">
+                    <img src="image/serv-1.png" alt="" width="40">
+                    <h3>быстрая доставка</h3>
+                </div>
+                <div class="icons">
+                    <img src="image/serv-2.png" alt="" width="40">
+                    <h3>свежая еда</h3>
+                </div>
+                <div class="icons">
+                    <img src="image/serv-3.png" alt="" width="40">
+                    <h3>лучшее качество</h3>
+                </div>
+                <div class="icons">
+                    <img src="image/serv-4.png" alt="" width="40">
+                    <h3>24/7 поддержка</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="popular" id="popular">
+
+        <div class="heading">
+            <span>популярная еда</span>
+            <h3>специальные предложения</h3>
+        </div>
+
+        <div class="box-container">
+
+            <div class="box">
+                <a href="#" class="ri-heart-line wishlist-icon"></a>
+                <div class="image">
+                    <img src="image/food-1.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>рис с овощами</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span> (50) </span>
+                    </div>
+                    <div class="price">₽40.00 <span>₽50.00</span> </div>
+                    <a href="#" class="btn">добавить в корзину</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <a href="#" class="ri-heart-line wishlist-icon"></a>
+                <div class="image">
+                    <img src="image/food-2.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>токпокки</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span> (50) </span>
+                    </div>
+                    <div class="price">₽40.00 <span>₽50.00</span> </div>
+                    <a href="#" class="btn">добавить в корзинце</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <a href="#" class="ri-heart-line wishlist-icon"></a>
+                <div class="image">
+                    <img src="image/food-3.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>курица с рисом</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span> (50) </span>
+                    </div>
+                    <div class="price">₽40.00 <span>₽50.00</span> </div>
+                    <a href="#" class="btn">добавить в корзину</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <a href="#" class="ri-heart-line wishlist-icon"></a>
+                <div class="image">
+                    <img src="image/food-4.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Пицца с вечтиной</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span> (50) </span>
+                    </div>
+                    <div class="price">₽40.00 <span>₽50.00</span> </div>
+                    <a href="#" class="btn">добавить в корзину</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <a href="#" class="ri-heart-line wishlist-icon"></a>
+                <div class="image">
+                    <img src="image/food-5.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>мега-бургер</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span> (50) </span>
+                    </div>
+                    <div class="price">₽40.00 <span>₽50.00</span> </div>
+                    <a href="#" class="btn">добавить в корзину</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <a href="#" class="ri-heart-line wishlist-icon"></a>
+                <div class="image">
+                    <img src="image/food-6.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>харчо</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span> (50) </span>
+                    </div>
+                    <div class="price">₽40.00 <span>₽50.00</span> </div>
+                    <a href="#" class="btn">добавить в корзину</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <a href="#" class="ri-heart-line wishlist-icon"></a>
+                <div class="image">
+                    <img src="image/food-7.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>невероятные булочки</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span> (50) </span>
+                    </div>
+                    <div class="price">₽40.00 <span>₽50.00</span> </div>
+                    <a href="#" class="btn">добавить в корзину</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <a href="#" class="ri-heart-line wishlist-icon"></a>
+                <div class="image">
+                    <img src="image/food-8.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>мини самса</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span> (50) </span>
+                    </div>
+                    <div class="price">₽40.00 <span>₽50.00</span> </div>
+                    <a href="#" class="btn">добавить в корзину</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="banner">
+
+        <div class="row-banner">
+            <div class="content">
+                <span>Двойное комбо</span>
+                <h3>Пицца</h3>
+                <p>кола и картошка фри</p>
+                <a href="#" class="btn">заказать</a>
+            </div>
+        </div>
+
+        <div class="grid-banner">
+            <div class="grid">
+                <img src="image/banner-1.png" alt="">
+                <div class="content">
+                    <span>специальное предложение</span>
+                    <h3>скидка 50%</h3>
+                    <a href="#" class="btn">заказать</a>
+                </div>
+            </div>
+
+            <div class="grid">
+                <img src="image/banner-2.png" alt="">
+                <div class="content center">
+                    <span>специальное предложение</span>
+                    <h3>скидка 25%</h3>
+                    <a href="#" class="btn">заказать</a>
+                </div>
+            </div>
+
+            <div class="grid">
+                <img src="image/banner-3.png" alt="">
+                <div class="content">
+                    <span>лимитировано</span>
+                    <h3>100% скидка</h3>
+                    <a href="#" class="btn">заказать</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+
+        <div class="heading">
+            <span>наше меню</span>
+            <h3>наши лучшие блюда</h3>
+        </div>
+
+        <div class="box-container">
+
+            <a href="#" class="box">
+                <img src="image/menu-1.png" alt="">
+                <div class="content">
+                    <h3>чикен-бургер</h3>
+                    <div class="price">₽40.00</div>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <img src="image/menu-2.png" alt="">
+                <div class="content">
+                    <h3>маргарита</h3>
+                    <div class="price">₽40.00</div>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <img src="image/menu-3.png" alt="">
+                <div class="content">
+                    <h3>тортилья</h3>
+                    <div class="price">₽40.00</div>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <img src="image/menu-4.png" alt="">
+                <div class="content">
+                    <h3>мега-сэндвич</h3>
+                    <div class="price">₽40.00</div>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <img src="image/menu-5.png" alt="">
+                <div class="content">
+                    <h3>картошка фри</h3>
+                    <div class="price">₽40.00</div>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <img src="image/menu-6.png" alt="">
+                <div class="content">
+                    <h3>карбонара</h3>
+                    <div class="price">₽40.00</div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="order" id="order">
+
+        <div class="heading">
+            <span>заказать</span>
+            <h3>быстрая доставка на дом</h3>
+        </div>
+
+        <div class="icons-container">
+            <div class="icons">
+                <img src="image/icon-1.png" alt="">
+                <h3>7:00 - 10:00</h3>
+            </div>
+
+            <div class="icons">
+                <img src="image/icon-2.png" alt="">
+                <h3>+123 987654321</h3>
+            </div>
+
+            <div class="icons">
+                <img src="image/icon-3.png" alt="">
+                <h3>Красноярск, аэровокзальная д.7</h3>
+            </div>
+        </div>
+
+        <form action="">
+
+            <div class="flex">
+                <div class="inputBox">
+                    <span>ваше имя</span>
+                    <input type="text" name="" id="" placeholder="имя заказчика">
+                </div>
+                <div class="inputBox">
+                    <span>ваш телефон</span>
+                    <input type="number" name="" id="" placeholder="телефон">
+                </div>
+            </div>
+
+            <div class="flex">
+                <div class="inputBox">
+                    <span>ваш заказ</span>
+                    <input type="text" name="" id="" placeholder="желаемая еда">
+                </div>
+                <div class="inputBox">
+                    <span>количество</span>
+                    <input type="number" name="" id="" placeholder="количество">
+                </div>
+            </div>
+
+            <div class="flex">
+                <div class="inputBox">
+                    <span>детали заказа</span>
+                    <input type="text" name="" id="" placeholder="ваше сообщение">
+                </div>
+                <div class="inputBox">
+                    <span>выберите время</span>
+                    <input type="datetime-local" name="" id="">
+                </div>
+            </div>
+
+            <div class="flex">
+                <div class="inputBox">
+                    <textarea placeholder="ваш адрес" name="" id="" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+
+            <input type="submit" value="отправить заказ" class="btn">
+
+        </form>
+    </section>
+
+    <section class="blogs" id="blogs">
+
+        <div class="heading">
+            <span>наши новости</span>
+            <h3>ежедневные новости</h3>
+        </div>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <h3> <i class="fas fa-calendar"></i> 20 мая, 2021 </h3>
+                    <img src="image/blog-1.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <div class="tags">
+                        <a href="#"> <i class="fas fa-tag"></i> еда / </a>
+                        <a href="#"> <i class="fas fa-tag"></i> буергеры / </a>
+                        <a href="#"> <i class="fas fa-tag"></i> пицца </a>
+                    </div>
+
+                    <h3>Почему у нас лучшая пицца ?</h3>
+                    <p>Рассказываем секреты готовки</p>
+                    <a href="#" class="btn">читать</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <h3> <i class="fas fa-calendar"></i> 22мая, 2021 </h3>
+                    <img src="image/blog-2.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <div class="tags">
+                        <a href="#"> <i class="fas fa-tag"></i> еда / </a>
+                        <a href="#"> <i class="fas fa-tag"></i> буергеры / </a>
+                        <a href="#"> <i class="fas fa-tag"></i> пицца </a>
+                    </div>
+
+                    <h3>У нас лучше чем в маке ?</h3>
+                    <p>Как приготовить лучше чем бигмак...</p>
+                    <a href="#" class="btn">Читать</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <h3> <i class="fas fa-calendar"></i> 23май, 2021 </h3>
+                    <img src="image/blog-3.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <div class="tags">
+                        <a href="#"> <i class="fas fa-tag"></i> еда / </a>
+                        <a href="#"> <i class="fas fa-tag"></i> буергеры / </a>
+                        <a href="#"> <i class="fas fa-tag"></i> пицца </a>
+                    </div>
+
+                    <h3>Крылышки крылышки крылышки...</h3>
+                    <p>Соскучились по сочным крылышкам, тогда вам к нам</p>
+                    <a href="#" class="btn">Читать</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+
+        <div class="newsletter">
+            <h3>Новостная рассылка</h3>
+            <form action="">
+                <input type="email" name="" id="" placeholder="ваш email">
+                <input type="submit" value="подписывайтесь">
+            </form>
+        </div>
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>our menu</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i> пицца </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> буергеры </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> курица </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> паста </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> и много другого! </a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home"> <i class="fas fa-arrow-right"></i> главная </a>
+                <a href="#about"> <i class="fas fa-arrow-right"></i> о нас </a>
+                <a href="#popular"> <i class="fas fa-arrow-right"></i> популярное </a>
+                <a href="#menu"> <i class="fas fa-arrow-right"></i> меню </a>
+                <a href="#order"> <i class="fas fa-arrow-right"></i> заказ </a>
+                <a href="#blogs"> <i class="fas fa-arrow-right"></i> блог </a>
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i> мой заказ </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> мой аккаунт </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> избранное </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> правила использования </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> политика конф. </a>
+            </div>
+
+            <div class="box">
+                <h3>часы работы</h3>
+                <p>понедельник : 7:00 - 10:00</p>
+                <p>вторник : 7:00 - 10:00</p>
+                <p>среда : 7:00 - 10:00</p>
+                <p>пятница : 7:00 - 10:00</p>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                <a href="#" class="fab fa-pinterest"></a>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
